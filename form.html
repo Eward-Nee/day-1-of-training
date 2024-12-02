@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My form</title>
+    <link rel="icon" href="images/golden-retriever-cute-dogs.png" type="images/png">
+</head>
+<body>
+    <h1>I like forms</h1> 
+
+    <!-- form is used when creating a form someone must fill in (to get
+     input from the user). enctype="multipart/form-data" is recommended
+     when sending large amount of dada for example video, audio, pics
+     or documents 
+    -->
+
+    <form action="index.php" method="get"
+    enctype="multipart/form-data">
+
+    <!-- Note that index.php does not exist, because 
+        I am yet to have learned it. --> <!-- method spesifies if this is a get
+        or post request. Post is for private info like a username and a password,
+        where the get is for insensitive data. 
+    -->
+
+        <!-- Labels are used just like delphi labels. The for attribute
+         of the lable must match the input/select's id attribute
+         that is used alongside the lable  
+        -->
+
+        <!-- a placeholder is better known as a hint. -->
+
+        <!-- the required attribute makes it manditory for a user to
+          fill in the element that has the required attribute. 
+        -->
+
+        <label for="Username">Username: </label>
+        <input type="text" placeholder="I like text" id="Username"
+         minlength="4" maxlength="10" required>
+         <br>
+         <br>
+         <label for="password">Password:</label>
+        <input type="password" id="password" minlength="6" required>
+
+
+        <br><br>
+
+        <label for="email">Fill in you email</label>
+        <input type="email" placeholder="Johnny@pix.com" id="email">
+        
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="061 459 6656" 
+        required pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+
+        <!-- 
+            This is how the required pattern attribute work:
+            [the list allowed example: 0-9]{the amount in a row allowed}
+            then the next caracter, then repeat.
+
+            example:    [0-9]{2}*[a-z]{5}   = 45*ajghg (allowed)
+                                            = 6a*4dsdqs (not allowed)
+        -->
+        
+        <br><br>
+
+        <label for="birht date">Birth date</label>
+        <input type="date" id="birht date">
+
+        <br><br>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" min="0" 
+        max="99" style="width: 40px;" value="1" > 
+
+        <!-- The value attribute sets a defualt value to an element -->
+
+        <br><br>
+
+        <label for="title">Title</label>
+        <br>
+        <label for="Mr">Mr</label>
+        <input type="radio" name="title" id="Mr" value="Mr">
+        <label for="MS">Ms</label>
+        <input type="radio" name="title" id="MS" value="Ms">
+        <label for="Dr">Dr</label>
+        <input type="radio" name="title" id="Dr" value="Dr">
+
+        <!-- 
+            When working with radio groups remember:
+                Main label's attribute (for) = input's attribute (name)
+                Sub labels attribute (for) = matching input's attribute (id)
+        -->
+
+        <br><br>
+        <label for="drop_down_menu">Payment</label>
+        <select id="drop_down_menu">
+            <option value="visa">Visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+
+        <!-- 
+            When working with select, remember:
+                select's attribute (id) = label's attribute (for)
+                options comes inside select tags.
+                options must have value attributes! 
+        -->
+
+        <br><br>
+
+        <label for="checkbox">sub</label>
+        <input type="checkbox" id="checkbox">
+
+        <br><br>
+
+        <label for="text_area">text here</label>
+        <textarea id="text_area" rows="3" cols="50"></textarea>
+
+        <!-- textarea works with (rows) and (cols) attributes -->
+
+        <br><br>
+        
+        <label for="file">file</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+
+        <!-- 
+            The (accept) attribute is used to define what file extentions will
+            be accepted. The <input type="file"> is used to upload a file.
+        -->
+        
+        <br>
+        <br>
+
+        <input type="submit">
+        <input type="reset" value="reset">
+
+        <!-- 
+            The submit and reset tipes is basic buttons.
+            The submit is used to send all info in the form tags to the
+            destination set in the form's (action) attribute.
+
+            The  reset is used to clear all info and give all
+            type's their default values as stated in their attributes.
+        -->
+
+    </form> 
+</body>
+</html>

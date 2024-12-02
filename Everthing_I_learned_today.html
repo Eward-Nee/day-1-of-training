@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summery</title>
+    <!-- The title tag is used To give the web page a name -->
+
+    <link rel="icon" href="images/golden-retriever-cute-dogs.png">
+    <!-- the link tag is used here give a web page a favicon -->
+</head>
+<body>
+
+    <h1>Let me explain</h1>
+    <!-- h1 is the biggest header text available to use -->
+
+    <hr>
+    <!-- hr is used to draw a line -->
+
+    <a href="https://tempmail.ninja/" target="_blank" id="nono"
+    title="Take me to free temp email site">Giva me a temp mail mate!</a>
+    <!-- 
+        the a tag is a anchor tag. it is used here to provide a url when you 
+        click on the text 
+    -->
+
+    <br>
+    <!-- br is used an enter -->
+     <br>
+
+    <form action="Index.php" method="post" enctype="multipart/form-data">
+
+        <!-- action  -->
+
+    <label for="Button">Click the button</label>
+    <input onclick="buttonpres()" type="button" id="Button" style="background-color: rgb(219, 211, 211);"
+    value="Give me a click">
+
+    <script>
+        function buttonpres(){
+            document.getElementById("nono").innerHTML= "oke, nvm."
+        } 
+    </script>
+
+    <br><br>
+    <input onclick="resetlinktext()" type="reset" value="Reset">
+
+    <script>
+        function resetlinktext(){
+            document.getElementById("nono").innerHTML="Giva me a temp mail mate!"
+        }
+    </script>
+
+    <br><br>
+
+    <img src="images/boston-terrier-spinning.gif" height="200" width="200"
+    alt="a dog spinning in circles">
+
+    <audio src="music/Wayfaring Stranger Country.mp3" controls loop 
+    style="background-color: greenyellow;"></audio>
+
+    <br><br>
+
+    <label for="check">Check please</label>
+    <input type="checkbox" id="check">
+
+    <br><br>
+
+    <label for="radio">Pick one</label>
+    <br>
+    <label for="music">Music</label>
+    <input type="radio" name="radio" id="music" value="music">
+    <label for="video">video</label>
+    <input type="radio" name="radio" id="video" value="video">
+    <label for="photo">photo</label>
+    <input type="radio" name="radio" id="photo" value="photo">
+
+    <br><br>
+
+    <label for="email">email</label>
+    <input type="email" id="email">
+
+    <br><br>
+
+    <label for="area">fill text in please</label>
+    <textarea id="area" cols="25" rows="5" minlength="4" required></textarea>
+
+    <br><br>
+
+    <label for="import">import document</label>
+    <input type="file" id="import" accept=".docx,.odt, text/plain, application/pdf ">
+
+    <br><br>
+
+    <label for="ddm">chose one</label>
+    <select id="ddm">
+        <option value="Dog">dog</option>
+        <option value="cat">cat</option>
+        <option value="mouse">mouse</option>
+    </select>
+
+    <br><br>
+    <label for="bday">when me was born</label>
+    <input type="date" id="bday" pattern="[0-9]{4}/[0-9]{2}/[0-9]{2}">
+
+    <br><br>
+
+    <input type="submit">
+
+    </form>
+
+    <br>
+    <pre>
+        <span style="background-color: rgb(201, 194, 180);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iusto porro voluptatum harum provident similique dicta </span>
+        <mark><b>quisquam</b> totam qui ex,</mark> <div style="background-color: aquamarine;">
+        laudantium, perspiciatis nobis omnis, 
+        aut minima voluptas quis voluptates exercitationem! Ratione.</div>
+    </pre>
+
+    <br>
+<h3>February:</h3>
+        <br>
+    <table border="5" style="border: 10px; border-color: brown;
+     border-style: double; background-color: wheat;" >
+        <tr>
+            <th>
+                sunday
+            </th>
+            <th>
+                Monday
+            </th>
+            <th>
+                Thuesday
+            </th>
+            <th>
+                Wednesday
+            </th>
+            <th>
+                Thursday
+            </th>
+            <th>
+                Friday
+            </th>
+            <th>
+                Saterday
+            </th>
+        </tr>
+
+        
+
+        <tr align="center" style="background-color: rgb(159, 214, 214);">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr align="center" style="background-color: rgb(49, 76, 77);color: white;">
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr align="center" style="background-color: darksalmon;color: black;">
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr align="center" style="background-color: midnightblue; color: white;">
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+
+    </table>
+
+    <ol>
+        <li>Eat</li>
+        <li>sleap</li>
+        <li>repeat</li>
+    </ol>
+
+    <ul>
+        <li>Cow</li>
+        <ul>
+            <li>milk</li>
+            <li>meat</li>
+        </ul>
+        <li>chicken</li>
+        <ul>
+            <li>meat</li>
+            <li>eggs</li>
+        </ul>
+        <li>goat</li>
+        <ul>
+            <li>meat</li>
+        </ul>
+    </ul>
+
+    <dl>
+        <dt> Eat </dt>
+        <dd> to open and close your mouth with food in it</dd>
+
+        <br>
+
+        <dt> sleep </dt>
+        <dd> to close your eyes and do nothing </dd>
+        
+        <br>
+
+        <dt> repeat </dt>
+        <dd> to do it all over again </dd>
+    </dl>
+    
+</body>
+</html>
